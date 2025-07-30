@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRBRMobileApp.MainPage"
+             xmlns:oxy="clr-namespace:OxyPlot.Maui.Skia;assembly=OxyPlot.Maui.Skia"
+             Background="Black">
+
+    <VerticalStackLayout BackgroundColor="Black"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Center">
+        <Image Source="logo.png" 
+               HeightRequest="120"
+               Margin="0,-20,-8,-10"></Image>
+        
+        <Label Text="e-Patient Monitoring V200"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="25"
+               FontAttributes="Bold"
+               TextColor="White"></Label>
+
+        <HorizontalStackLayout Spacing="30" 
+                               Padding="50"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center">
+
+            <Grid>
+                <StackLayout HorizontalOptions="Center" 
+                            VerticalOptions="Center" 
+                            Spacing="5"
+                            BackgroundColor="Black"
+                            Padding="30,20,30,10">
+                    <Image Source="hr.png" WidthRequest="30" ></Image>
+                    <Label Text="{Binding HRValue}"
+                            FontSize="50"
+                            FontAttributes="Bold"
+                            TextColor="LimeGreen"
+                            HorizontalOptions="Center" />
+                </StackLayout>
+                <Button BackgroundColor="Transparent"
+                        BorderColor="White"
+                        BorderWidth="1"></Button>
+            </Grid>
+
+            <Grid>
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center" 
+                             Spacing="5" 
+                             BackgroundColor="Black"
+                             Padding="30,14,30,9">
+                    <Image Source="rr.png" WidthRequest="30" ></Image>
+                    <Label Text="{Binding RRValue}"
+                           FontSize="50"
+                           FontAttributes="Bold"
+                           TextColor="LimeGreen"
+                           HorizontalOptions="Center" />
+                </StackLayout>
+                <Button BackgroundColor="Transparent"
+                        BorderColor="White"
+                        BorderWidth="1"></Button>
+            </Grid>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="30" 
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center">
+
+            <Grid>
+                <StackLayout HorizontalOptions="Center" 
+                    VerticalOptions="Center" 
+                    Spacing="5"
+                    BackgroundColor="Black"
+                    Padding="30,20,30,10">
+                    <Image Source="t1.png" WidthRequest="30" ></Image>
+                    <Label Text="{Binding T1Value}"
+                    FontSize="50"
+                    FontAttributes="Bold"
+                    TextColor="LimeGreen"
+                    HorizontalOptions="Center" />
+                </StackLayout>
+                <Button BackgroundColor="Transparent"
+                BorderColor="White"
+                BorderWidth="1"></Button>
+            </Grid>
+
+            <Grid>
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center" 
+                     Spacing="5" 
+                     BackgroundColor="Black"
+                     Padding="30,14,30,9">
+
+                    <Image Source="t2.png" WidthRequest="30" ></Image>
+                    <Label Text="{Binding T2Value}"
+                           FontSize="50"
+                           FontAttributes="Bold"
+                           TextColor="LimeGreen"
+                           HorizontalOptions="Center" />
+                </StackLayout>
+                <Button BackgroundColor="Transparent"
+                BorderColor="White"
+                BorderWidth="1"></Button>
+            </Grid>
+        </HorizontalStackLayout>
+
+        <!--<Grid BackgroundColor="Black" Margin="0,20,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <oxy:PlotView Model="{Binding PlotModel1}" HeightRequest="150"
+              Margin="-30, 0, 0, 0" Grid.Column="0">
+            </oxy:PlotView>
+            <Image Source="hr.png" WidthRequest="30" Grid.Column="1" ></Image>
+        </Grid>
+
+        <Grid BackgroundColor="Black">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <oxy:PlotView Model="{Binding PlotModel2}" HeightRequest="100"
+                      Margin="-30, -20, 0, 0" Grid.Column="0">
+            </oxy:PlotView>
+            <Image Source="rr.png"  WidthRequest="30" Grid.Column="1"
+                   Margin="0,0,0,30"></Image>
+        </Grid>-->
+
+    </VerticalStackLayout>
+</ContentPage>

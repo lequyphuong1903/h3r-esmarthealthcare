@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRBRMobileApp.LoginPage">
+    <ContentPage.Content>
+        <Grid
+    BackgroundColor="Black"
+    HorizontalOptions="FillAndExpand"
+    VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Frame BackgroundColor="Black"
+        Grid.Row="1"
+        Margin="0,0,0,-80"
+        BorderColor="DimGray"
+        CornerRadius="50"
+        HasShadow="True"
+        HeightRequest="700">
+                <Grid
+            Padding="20,30,20,0"
+            HorizontalOptions="FillAndExpand"
+            RowSpacing="20"
+            VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Image Source="logo.png" HeightRequest="100"
+                            Margin="0,-20,-8,-30"
+                           Grid.Row="0"></Image>
+                    <VerticalStackLayout Grid.Row="1">
+                        <Label
+                            
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            Margin="10,0,0,0"
+                            HorizontalOptions="CenterAndExpand"
+                            Text="Smart e-Healthcare"
+                            TextColor="White" />
+                        <Label
+                            Grid.Row="0"
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            Margin="10,20,0,0"
+                            HorizontalOptions="CenterAndExpand"
+                            Text="Vital signs monitoring"
+                            TextColor="White" />
+                        <Label
+                            Grid.Row="0"
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            Margin="10,0,0,0"
+                            HorizontalOptions="CenterAndExpand"
+                            Text="system for acupuncture"
+                            TextColor="White" />
+                    </VerticalStackLayout>
+                    
+                    <StackLayout Grid.Row="1"
+                    Padding="20,0,0,0"
+                    HorizontalOptions="CenterAndExpand"
+                    Orientation="Horizontal"
+                    VerticalOptions="Center"
+                    Spacing="20">
+                        <Image
+                    Margin="0,0"
+                    Aspect="AspectFit"
+                    Source="loginicon.png"
+                    WidthRequest="100" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="2"
+                    Padding="20,0,0,0"
+                    HorizontalOptions="CenterAndExpand"
+                    Orientation="Horizontal"
+                    VerticalOptions="Center"
+                    Spacing="20">
+                        <Image
+                        Margin="0,0"
+                        Aspect="AspectFit"
+                        Source="logolab.png"
+                        WidthRequest="70" />
+                        <Image
+                        Margin="0,0"
+                        Aspect="AspectFit"
+                        Source="logopknu.png"
+                        WidthRequest="100" />
+                    </StackLayout>
+                    <Label
+                Grid.Row="3"
+                Margin="0,-15,0,0"
+                HorizontalOptions="CenterAndExpand"
+                Text="Login in to account"
+                TextColor="White"/>
+                    <Entry
+                Grid.Row="4"
+                Margin="0,0,0,0"
+                HorizontalOptions="FillAndExpand"
+                Placeholder="Email"
+                
+                Text="{Binding Email}"
+                TextColor="White"
+                VerticalOptions="FillAndExpand" />
+                    <Entry
+                Grid.Row="5"
+                HorizontalOptions="FillAndExpand"
+                IsPassword="True"
+                Placeholder="Password"
+                        TextColor="White"
+                Text="{Binding Password}"
+                VerticalOptions="FillAndExpand" />
+                    <Button
+                Grid.Row="6"
+                BackgroundColor="Black"
+                Command="{Binding SignInCommand}"
+                CornerRadius="20"
+                Text="Login"
+                BorderColor="White"
+                TextColor="White"
+                BorderWidth="1"/>
+
+                    <Button
+                Grid.Row="7"
+                BackgroundColor="Black"
+                Command="{Binding RegisterBtn}"
+                CornerRadius="20"
+                Text="Register new account"
+                TextColor="White"
+                BorderColor="White"
+                        BorderWidth="1"/>
+
+                    <StackLayout
+                Grid.Row="8"
+                HorizontalOptions="CenterAndExpand"
+                Orientation="Horizontal"
+                Spacing="40">
+                        <Image
+                    Aspect="AspectFit"
+                    HeightRequest="30"
+                    Source="fb.png"
+                    WidthRequest="30" />
+                        <Image
+                    Aspect="AspectFit"
+                    HeightRequest="30"
+                    Source="twitter.png"
+                    WidthRequest="30" />
+                        <Image
+                    Aspect="AspectFit"
+                    HeightRequest="30"
+                    Source="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-icon-png-transparent-background-osteopathy-16.png"
+                    WidthRequest="30" />
+                        <Image
+                    Aspect="AspectFit"
+                    HeightRequest="30"
+                    Source="kakaotalk.png"
+                    WidthRequest="30" />
+                    </StackLayout>
+                    <Label
+                Grid.Row="9"
+                FontAttributes="Bold"
+                HorizontalOptions="CenterAndExpand"
+                Text="Forget Password" />
+                </Grid>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
