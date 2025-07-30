@@ -1,6 +1,6 @@
 # E-Smart Health Care
 
-![Overview of Project](Imgs/overview.jpg)
+![Overview of Project](Media/overview.jpg)
 
 ## Introduction
 
@@ -17,7 +17,7 @@
 
 ## Demo
 
-[Download Video Demo](Imgs/demo.mp4)
+![Demo](Media/demo.gif)
 
 ## Contact
 
