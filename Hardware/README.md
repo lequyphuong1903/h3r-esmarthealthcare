@@ -1,6 +1,6 @@
 # Hardware
 
-## Overview
+## Introduction
 
 This system is a wearable physiological signal monitoring device using a PVDF (Polyvinylidene fluoride) sensor strip for heart rate (HR) and respiration rate (RR) detection. The design integrates both hardware processing and wireless communication via BLE/Wi-Fi using the ESP32-S3 module.
 
